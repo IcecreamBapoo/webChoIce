@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChoIce冰選店</title>
+
+
+<link rel="shortcut icon" href="./images/title_logo.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="./images/title_logo.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./images/title_logo.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./images/title_logo.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./images/title_logo.png">
+
+
+
+
+
+    <!-- 設定CSS外部連結檔案 -->
+    <link rel="stylesheet" href="./css/choice_all.css">
+    <!-- 添加燈箱效果CSS -->
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css">
+
+    <style>
+
+    
+            /* 整  體 */
+            .wrap {
+
+                /* border: 1px solid red; */
+            }
+
+
+
+        .card1 {
+            background-color: #fff;
+            /* padding: 15px; */
+
+        }
+
+        .card1 img {
+            width: 250px;
+            height: 250px;
+            /* 要和外框同尺寸不然不好看 */
+            margin: 20px 20px 20px 0px ;
+            /* 垂直排列靠上 */
+            /* 新的html圖片下方會有流排區，為了將圖片下方留白區平均分配在上下位置 */
+            vertical-align: top;
+        }
+
+        .card {
+            /* 隱藏溢出的範圍 */
+            /* overflow: hidden; */
+
+            display: inline-block;
+             margin: 80px 0 150px 0;
+
+            /* 陰影位置 */
+            /* box-shadow: X軸 Y軸 模糊度 顏色; */
+            box-shadow: 0 4px 9px rgba(0, 0, 0, 0.493);
+        }
+
+
+
+
+
+    
+            .content {
+                /* border: 1px solid red; */
+                width: 90%;
+                max-width: 861px;
+    
+                margin: auto;
+    
+                font-size: 26px;
+    
+                /*padding: 0px;*/
+    
+            }
+    
+            .all-title {
+                /* background-color: red; */
+    
+                width: 100%;
+                height: 69px;
+                margin-top: 40px;
+                /* margin: auto; */
+    
+                /* border-bottom: 1px solid #000; */
+                /* padding-bottom: 6px; */
+                /* margin-bottom: 6px; */
+    
+                position: relative;
+            }
+    
+            .title-line {
+                /* background-color: green; */
+                width: 99%;
+                max-width: 850px;
+                min-width: 9%;
+                margin: auto;
+                /* margin: 0 0 0 6px; */
+    
+                height: 68px;
+    
+    
+                border-bottom: 2px solid #DAB16E;
+    
+                position: absolute;
+    
+                /* bottom: 0; */
+                /* left: 0; */
+                right: 0;
+    
+    
+    
+            }
+    
+            .title-text {
+    
+                /* background-color: rgb(184, 102, 51); */
+                width: auto;
+                height: 76px;
+                margin: auto;
+                padding: 35px 14px 12px 14px;
+    
+                position: absolute;
+    
+                color: #fff;
+                font-size: 26px;
+                line-height: 14.4pt;
+                font-weight: 600;
+    
+            }
+    
+            .title-p {
+                /* background-color: rgb(184, 102, 51); */
+                position: absolute;
+                /*left:0*/
+                /*right:0*/
+                /*bottom:0*/
+    
+
+            }
+    
+            .cc,
+            .cc2 {
+                /* border: 1px solid green; */
+                width: 93%;
+                max-width: 812px;
+                /* min-width: 30px; */
+                min-height: 140px;
+                /* height: 150px; */
+                max-height: 150px;
+                margin: auto;
+                margin-right: 0;
+                padding: 10px;
+    
+    
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+    
+            }
+    
+            .cc {
+                /* background-color: rgb(53, 51, 184); */
+    
+                border-bottom: 2px dotted #DAB16E;
+    
+            }
+    
+            .cc2 {
+                /* background-color: rgb(144, 184, 51); */
+    
+                border-bottom: 2px solid #DAB16E;
+    
+            }
+    
+            .v-line-2 {
+                border-left: 1px solid #DAB16E;
+                height: 110px;
+                left: 50%;
+                position: absolute;
+    
+            }
+    
+    
+    
+            .c-box1 {
+                /* background-color: rgb(53, 51, 184); */
+                /* border: 1px solid green; */
+                min-width: 100px;
+                max-width: 261px;
+    
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+    
+                align-items: center;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 500;
+                margin: 10px;
+                /* 設定比例 */
+                /* flex-grow: 19; */
+    
+                /* flex-shrink: 31; */
+            }
+    
+            /*垂直分隔線*/
+            .v-line-1 {
+                /* border: 1px solid green; */
+                margin: 0 10px 0 5px;
+    
+                border-left: 1px solid #DAB16E;
+                height: 52px;
+                /*left: 50%;*/
+    
+                /*position: absolute;*/
+                /* 設定比例 */
+                /* flex: 0 0; */
+                flex-basis: 1px;
+            }
+    
+    
+            .c-box2 {
+                /* background-color: rgb(51, 184, 62); */
+                /* border: 1px solid green; */
+    
+                min-width: 273px;
+                max-width: 506px;
+                margin: auto;
+    
+    
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+    
+                align-items: center;
+                font-size: 15px;
+                line-height: 24px;
+    
+                margin: 10px;
+                /* 設定比例 */
+                flex-grow: 31;
+                /* flex-shrink: 31; */
+    
+            }
+    
+            .p-box1,
+            .p-box2 {
+                /* background-color: rgb(229, 165, 238); */
+                /* border: 1px solid green; */
+    
+                margin: auto;
+                margin: 0 15px 0 0;
+                color: #1A0400;
+            }
+    
+            .p-box1 {
+                /* background-color: rgb(169, 51, 184); */
+                /* min-width: 10px; */
+                max-width: 92px;
+    
+                /* 設定比例 */
+                /* flex-grow: 2; */
+            }
+    
+    
+            .p-box2 {
+                /* background-color: rgb(145, 159, 223); */
+                min-width: 213px;
+                max-width: 418px;
+    
+                /* 設定比例 */
+                flex-grow: 8;
+            }
+    
+    
+    
+            /*文字*/
+    
+            .title-p span {}
+    
+            .box1-p {}
+    
+            .line-through {
+                /* border: 1px solid red; */
+    
+            }
+        </style>
+    </head>
+
+<body>
+
+    <div class="wrap">
+        <!-- 頁首區 -->
+        <div class="header">
+            <!-- <img src="./images/LOGO_off.png" alt=""> -->
+            <!-- <img src="./images/LOGO_off.png" alt=""> -->
+
+            <h1 class="logo">
+                <a href="index.html"></a>
+            </h1>
+
+            <div class="link-bg">
+
+            </div>
+
+            <ul>
+                <li>
+                    <div class="shape-ex1">
+                        <a href="index.html">ChoIce</a>
+
+                    </div>
+                    <div class="shape-ex1">
+                        <a href="menu.html">我的冰品</a>
+
+                    </div>
+                    <div class="shape-ex1">
+                        <a href="store.html">門市資訊</a>
+
+                    </div>
+
+
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+
+
+        <!-- 輪撥區 card -->
+
+        <div class="card">
+
+            <div class="card1">
+                        <!-- 燈箱效果時的圖 -->
+                <ul>
+                    <li>
+                         <img src="./images/Pic1/lindsay2_6.png" alt="">
+                    </li>
+                    <li>
+
+                        <img src="./images/Pic1/lindsay2_5.png" alt="">
+                    </li>
+                    <li>
+                         <img src="./images/Pic1/lindsay2_3.png" alt="">
+                    </li>
+
+                    <li>
+                         <img src="./images/Pic1/lindsay2_7.png" alt="">
+                    </li>
+
+                    <li>
+                         <img src="./images/Pic1/lindsay2_8.png" alt="">
+                    </li>
+                    <li>
+                         <img src="./images/Pic1/lindsay2_9.png" alt="">
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- 內容區 -->
+        <!-- 內 容 1 段 -->
+        <div class="content">
+                <!-- 1 區 域 北 部 -->
+                <div class="all-title">
+                    <div class="title-line"></div>
+                    <div class="title-p">
+                        <span></span>
+                        <img src="./images/title-p0.png" alt="">
+                    </div>
+                    <p class="title-text">
+                        北部
+                    </p>
+    
+                </div>
+    
+    
+                <!-- 1北 部 下 行 cc -->
+                <div class="cc">
+                    <!--1-1 門 市 -->
+                    <div class="c-box1">
+                        <p class="box1-p">台北公館店</p>
+    
+                    </div>
+                    <!-- 垂直分隔線 -->
+                    <div class="v-line-1">
+                    </div>
+                    <!-- 1-1 資 訊 -->
+                    <div class="c-box2">
+    
+                        <div class="p-box1">
+                            <p>
+                                <p class="line-through">Add.</p>
+                                <p class="line-through">Tel.</p>
+                            </p>
+                        </div>
+    
+                        <div class="p-box2">
+                            <p class="line-through">台北市大安區羅斯福路圈段00號</p>
+    
+                            <p class="line-through">(02)2382-0137</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                <div class="cc2">
+                    <!--1-2 門 市 -->
+                    <div class="c-box1">
+                        <p class="box1-p">台北信義店</p>
+    
+                    </div>
+                    <!-- 垂直分隔線 -->
+                    <div class="v-line-1">
+                    </div>
+                    <!--1-2 資 訊 -->
+                    <div class="c-box2">
+    
+                        <div class="p-box1">
+                            <p>
+                                <p class="line-through">Add.</p>
+                                <p class="line-through">Tel.</p>
+                            </p>
+                        </div>
+    
+                        <div class="p-box2">
+                            <p class="line-through">台北市信義區台北市信義區松仁路00號</p>
+    
+                            <p class="line-through">(02)2382-0138</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+    
+                <!-- 垂直分隔線 2  -->
+                <div class="content-line">
+                    <div class="v-line-2">
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+            <!-- 內 容 2 段 -->
+            <div class="content">
+                <!-- 2 區 域 中 部 -->
+                <div class="all-title">
+                    <div class="title-line"></div>
+                    <div class="title-p">
+                        <span></span>
+                        <img src="./images/title-p0.png" alt="">
+                    </div>
+                    <p class="title-text">
+                        中部
+                    </p>
+    
+                </div>
+    
+    
+                <!-- 2 北 部 下 行 cc -->
+                <div class="cc">
+                    <!--2-1 門 市 -->
+                    <div class="c-box1">
+                        <p class="box1-p">台中神岡店</p>
+    
+                    </div>
+                    <!-- 垂直分隔線 -->
+                    <div class="v-line-1">
+                    </div>
+                    <!-- 2-1 資 訊 -->
+                    <div class="c-box2">
+    
+                        <div class="p-box1">
+                            <p>
+                                <p class="line-through">Add.</p>
+                                <p class="line-through">Tel.</p>
+                            </p>
+                        </div>
+    
+                        <div class="p-box2">
+                            <p class="line-through">台中市神岡區中山路00號</p>
+    
+                            <p class="line-through">(04)2382-0139</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                <div class="cc2">
+                    <!--2-2 門 市 -->
+                    <div class="c-box1">
+                        <p class="box1-p">台中中新店</p>
+    
+                    </div>
+                    <!-- 垂直分隔線 -->
+                    <div class="v-line-1">
+                    </div>
+                    <!-- 2-2 資 訊 -->
+                    <div class="c-box2">
+    
+                        <div class="p-box1">
+                            <p>
+                                <p class="line-through">Add.</p>
+                                <p class="line-through">Tel.</p>
+                            </p>
+                        </div>
+    
+                        <div class="p-box2">
+                            <p class="line-through">台中市信義區台北市信義區松仁路00號</p>
+    
+                            <p class="line-through">(04)2382-0130</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+    
+                <!-- 垂直分隔線 2  -->
+                <div class="content-line">
+                    <div class="v-line-2">
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+    
+    
+    
+            </div>
+    
+    
+    
+            <!-- 內 容 3 段 -->
+            <div class="content">
+                <!-- 3 區 域 南 部 -->
+                <div class="all-title">
+                    <div class="title-line"></div>
+                    <div class="title-p">
+                        <span></span>
+                        <img src="./images/title-p0.png" alt="">
+                    </div>
+                    <p class="title-text">
+                        南部
+                    </p>
+    
+                </div>
+    
+    
+                <!-- 3 南 部 下 行 cc -->
+                <div class="cc">
+                    <!--3-1 門 市 -->
+                    <div class="c-box1">
+                        <p class="box1-p">台南關廟店</p>
+    
+                    </div>
+                    <!-- 垂直分隔線 -->
+                    <div class="v-line-1">
+                    </div>
+                    <!-- 3-1 資 訊 -->
+                    <div class="c-box2">
+    
+                        <div class="p-box1">
+                            <p>
+                                <p class="line-through">Add.</p>
+                                <p class="line-through">Tel.</p>
+                            </p>
+                        </div>
+    
+                        <div class="p-box2">
+                            <p class="line-through">台南市關廟區南學路二段00號                            </p>
+    
+                            <p class="line-through">(06)2382-0131</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                <div class="cc2">
+                    <!--3-2 門 市 -->
+                    <div class="c-box1">
+                        <p class="box1-p">台中南新店</p>
+    
+                    </div>
+                    <!-- 垂直分隔線 -->
+                    <div class="v-line-1">
+                    </div>
+                    <!-- 3-2 資 訊 -->
+                    <div class="c-box2">
+    
+                        <div class="p-box1">
+                            <p>
+                                <p class="line-through">Add.</p>
+                                <p class="line-through">Tel.</p>
+                            </p>
+                        </div>
+    
+                        <div class="p-box2">
+                            <p class="line-through">台南市中西區西門路一段00號</p>
+    
+                            <p class="line-through">(06)2382-0132</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+    
+    
+    
+            </div>
+    
+                <!-- 頁尾  垂直線 -->
+                <div class="content2">
+                        <div class="v-line">
+                        </div>
+            
+                    </div>
+            
+        
+
+        <!-- 頁尾區 -->
+        <div class="footer">
+            <div class="fp">
+                <img src="./images/footer_logo.png" alt="">
+            </div>
+
+            <p>32051 桃園市中壢區健行路xx號</p>
+            <p>TEL. 03-41235669</p>
+
+            <ul>
+                <li><a href="#"><img src="./images/icon/facebook_icon2.png" alt="FB"></a></li>
+                <li><a href="#"><img src="./images/icon/instagram_icon2.png" alt="IG"></a></li>
+                <li><a href="#"><img src="./images/icon/line_icon2.png" alt="LINE"></a></li>
+            </ul>
+
+            <h4> copyright &copy; 2025 ChoIce. All rights reserved.</h4>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- jquery主程式 -->
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <!-- 添加燈箱效果主程式 -->
+    <script src="./lightbox/js/lightbox.min.js"></script>
+    <!-- 旋轉木馬carousel主程式 -->
+    <script src="./js/jquery.jcarousellite.min.js"></script>
+
+
+    <!-- 自行撰寫JS -->
+    <!-- 駝峰式命名 -->
+    <!-- 小駝峰(第二個單字開始的字首為大寫) -->
+    <!-- 大駝峰(每一個單字開始的字首為大寫) -->
+    <script>
+            $(function () {
+                $('.card1').jCarouselLite({
+                    auto: -500, //多久時間捲動(以毫秒為單位:1秒=1000毫秒)
+                    speed: 40000, //每次捲動的速度
+                    scroll: 7, //每次捲動的張數
+                    visible: 7, //可見的張數
+                });
+            });
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
